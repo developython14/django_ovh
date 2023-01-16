@@ -1,0 +1,49 @@
+<!-- chat/templates/chat/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Chat Rooms</title>
+</head>
+<body>
+    <div style="display: flex; justify-content: space-evenly;">
+    <div>
+        <h3>List of Contact</h3>
+        <ul>
+            {% for person in persons %}
+            <li><a href="/chat/chat_mess"> {{person.user.username}}</a></li>
+            {% endfor %}        
+        </ul>
+        
+    </div>
+    <div>
+    <h3>account information</h3>
+    <div>username  :  {{me.username}}</div>
+    <div>First name:  {{me.first_name}}</div>
+    <div>Last name  :  {{me.last_name}}</div>
+    <p>email  :  {{me.email}}</p>
+    </div>
+    <div>
+        <h3>create video conference</h3>
+        <textarea name="muconf" id="conf" cols="30" rows="10"></textarea>
+        <button onclick="generate()">genertae link</button>
+    </div>
+
+    <a href="/accounts/logout">logout</a>
+
+
+    <script>
+        function generate(){
+        var ref = document.getElementById('conf')
+        ref.value = 'link created succefly ad copied you can now share it with teameates <br>'
+        ref.value = ref.value + 'https://mustapha.up.railway.app/chat/screen/video/'
+        ref.value = ref.value + Math.random().toString(36).substr(2);
+        navigator.clipboard.writeText(ref.value);
+   // Alert the copied text
+        }
+
+    </script>
+
+
+</body>
+</html>

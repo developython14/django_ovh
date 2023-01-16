@@ -1,0 +1,44 @@
+{% extends 'base_start.html' %}
+
+{% block head %}
+{{ block.super }}
+{% endblock %}
+
+
+
+{% block body %}
+{% load static %} 
+    <!-- ======= Contact Section ======= -->
+    <section class="contact" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500" style="padding: 50px;">
+        <div class="container">
+  
+          <div class="row">
+  
+  
+            </div>
+  
+            <div class="col-lg-6">
+              <form  method="post" >
+                {% csrf_token %}
+                {{ form.as_p }}
+                <br>
+                <input type="submit" value="Login">
+              </form>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section><!-- End Contact Section -->
+
+
+{% endblock %}
+
+
+
+
+
+
+{% block footer %}
+{{ block.super }}
+{% endblock %}

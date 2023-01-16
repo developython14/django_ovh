@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+{% block head %}
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>INREPM</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    {% load static %}  
+    <!-- Favicons -->
+    <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+  
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/aos/aos.css'  %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css'  %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css'  %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css'  %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css'  %}" rel="stylesheet">
+  
+    <!-- Template Main CSS File -->
+    <link href="{% static  'assets/css/style.css'  %}" rel="stylesheet">
+  
+    <!-- =======================================================
+    * Template Name: Moderna - v4.10.1
+    * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+  </head>
+{% endblock %}
+
+
+{% block header %}
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-scrolled">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div class="logo">
+        <h1 class="text-light"><a href="index.html"><span>INREPM</h1><h5>INternational REsearch  PlatforM</h5></span></a>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a  href="index.html">Accueil</a></li>
+          <li><a href="about.html">Nos valeurs</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="log.html">Intranet</a></li>
+          <li><a href="team.html">L'équipe</a></li>
+          <li><a href="contact.html">Contactez-nous</a></li>
+          <li><a class="active" href="{% url 'signup' %}">S'inscrire</a></li>
+          <li><a href="{% url 'login' %}">Se connecter</a></li>
+          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+{% endblock %}
+
+
+{% block body %}
+
+{% endblock %}
+
+
+
+{% block footer %}
+  <!-- ======= Footer ======= -->
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>Notre Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+          </div>
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Liens utiles</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Accueil</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Nos valeurs</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Nos services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Nos Conditions </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Confidentialité</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Nos Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Service 1</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Service 2</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Service 3</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Service 4</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Service 5</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contactez-nous</h4>
+            <p>
+              
+              Toulouse <br>
+              France <br><br>
+              <strong>Téléphone:</strong> +33 (0)5 34 00 00 00<br>
+              <strong>Email:</strong> info@inrepm.com<br>
+            </p>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>About INREPM</h3>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>INREPM</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="accueil.html">INREPM</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js'  %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'  %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js'  %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js'  %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js'  %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js'  %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js'  %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static  'assets/js/main.js'  %}"></script>
+
+
+{% endblock %}
+
+</html>

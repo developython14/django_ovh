@@ -1,0 +1,20 @@
+<style>
+    p{
+        line-height: 150%;
+    }
+    </style>
+    
+    {% load static %}  
+
+    <div class="template">
+        <img src="https://images.pexels.com/photos/374074/pexels-photo-374074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width="200px" alt="...">
+        <br>
+        Hi {{ user.username }},<br>
+        Please click on the link to confirm your registration,
+        http://{{ domain }}{% url 'activate' uidb64=uid token=token %}    
+        <p>Need help? Feel free to contact us by replying to this message.<br>
+            Best regards,<br>
+            INREPM Team<br>
+            <a href="https://mustapha.up.railway.app/">  https://mustapha.up.railway.app/</a>
+        </p>
+    </div>

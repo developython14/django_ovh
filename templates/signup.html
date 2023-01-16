@@ -1,0 +1,59 @@
+{% extends 'base_start.html' %}
+
+{% block head %}
+{{ block.super }}
+{% endblock %}
+
+
+
+{% block body %}
+{% load static %} 
+{% load crispy_forms_tags %}
+
+<section class="breadcrumbs">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>Demande d'inscription</h2>
+        <ol>
+          <li><a href="index.html">Accueil</a></li>
+          <li>Inscription</li>
+        </ol>
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+  <!-- ======= Contact Section ======= -->
+  <section class="contact" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+    <div class="container">
+      
+      <div class="row">
+
+        
+        </div>
+
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{ form1|crispy }}
+            {{ form|crispy }}
+            <br>
+            <button type="submit">Create a New account</button>
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+{% endblock %}
+
+{% crispy form %}
+
+
+
+
+
+{% block footer %}
+{{ block.super }}
+{% endblock %}
