@@ -23,3 +23,7 @@ def room(request, room_name):
 
 def video(request,room_name):
     return render(request, "chat/peer.html")
+
+
+def webrtc(request):
+    return render(request, "chat/webrtc.html")
